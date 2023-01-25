@@ -1,0 +1,209 @@
+.course {
+  margin: 0px;
+  width: 100%;
+  padding: 144px 80px 112px;
+  display: flex;
+  flex-direction: column;
+}
+.course__title {
+  margin: 0px auto 0px 0px;
+  color: var(--title-color);
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 86px;
+  text-align: left;
+}
+.course__list {
+  margin: 20px 0px 0px 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.course__item {
+  position: relative;
+  margin: 50px 0px 0px 0px;
+  width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  background: var(--white-color);
+  transition: all .3s ease-in-out;
+}
+.course__top {
+  position: relative;
+  margin: 0px;
+  width: 450px;
+  height: 218px;
+  overflow: hidden;
+  border-radius: 16px 16px 0px 0px;
+}
+.course__top::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.3);
+  transition: all 0.8s ease-in-out;
+}
+.course__item:hover .course__top::after {
+  background-color: rgba(0,0,0,0);
+}
+.course__img {
+  position: relative;
+  width: 450px;
+  height: 218px;
+  border-radius: 16px 16px 0px 0px;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+  overflow: hidden;
+  transition: transform 0.8s ease-in-out;
+}
+.course__item:hover .course__img {
+  transform: scale(1.2);
+}
+.course__hours {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 8px 16px;
+  background: var(--secondary-color);
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--white-color);
+  user-select: none;
+  pointer-events: none;
+  z-index: 5;
+}
+.course__bottom {
+  margin: 0px;
+  padding: 24px 16px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.course__tags {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+}
+.course__name {
+  margin: 16px 0px 0px 0px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--title-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+}
+.course__description {
+  margin: 20px 0px 12px 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--title-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  box-orient: vertical;
+}
+.course__more {
+  margin: auto 0px 0px 0px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--main-color);
+  transition: all .3s ease-in-out;
+  letter-spacing: 1px;
+}
+.course__more:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+@media all and (max-width: 1023px) {
+  .course {
+    padding: 104px 16px 76px;
+  }
+  .course__title {
+    margin: 0px auto 0px;
+    font-size: 42px;
+    line-height: 1.15;
+    text-align: center;
+  }
+  .course__list {
+    margin: 0px;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .course__item {
+    position: relative;
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+  }
+  .course__top {
+    width: 100%;
+    height: 218px;
+  }
+  .course__img {
+    width: 100%;
+    height: 218px;
+  }
+  .course__bottom {
+    padding: 20px 16px;
+    min-height: auto;
+  }
+  .course__name {
+    margin: 12px 0px 0px 0px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .course__description {
+    margin: 12px 0px 20px 0px;
+    font-size: 14px;
+    line-height: 18px;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+  }
+  .course__more {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .course__hours {
+    margin: 0px 6px 0px 0px;
+    padding: 6px 10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
