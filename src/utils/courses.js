@@ -12,46 +12,71 @@ import novikov from '../images/authors/novikov.png';
 import shumeiko from '../images/authors/shumeiko.png';
 import rzd from '../images/authors/rzd.png';
 import rut from '../images/authors/rut.png';
-import course_history_russia1 from '../images/screenshots/course_history-russia/1.png';
-import course_history_russia2 from '../images/screenshots/course_history-russia/2.png';
-import course_history_russia3 from '../images/screenshots/course_history-russia/3.png';
-import course_history_russia4 from '../images/screenshots/course_history-russia/4.png';
-import course_history_russia5 from '../images/screenshots/course_history-russia/5.png';
-import course_history_russia6 from '../images/screenshots/course_history-russia/6.png';
-import course_history_russia7 from '../images/screenshots/course_history-russia/7.png';
-import course_history_russia8 from '../images/screenshots/course_history-russia/8.png';
-import course_history_russia9 from '../images/screenshots/course_history-russia/9.png';
-import course_history_russia10 from '../images/screenshots/course_history-russia/10.png';
-import course_history_transport1 from '../images/screenshots/course_history-transport/1.png';
-import course_history_transport2 from '../images/screenshots/course_history-transport/2.png';
-import course_history_transport3 from '../images/screenshots/course_history-transport/3.png';
-import course_history_transport4 from '../images/screenshots/course_history-transport/4.png';
-import course_history_transport5 from '../images/screenshots/course_history-transport/5.png';
-import course_history_transport6 from '../images/screenshots/course_history-transport/6.png';
-import course_history_transport7 from '../images/screenshots/course_history-transport/7.png';
-import course_history_transport8 from '../images/screenshots/course_history-transport/8.png';
-import course_history_transport9 from '../images/screenshots/course_history-transport/9.png';
-import course_history_transport10 from '../images/screenshots/course_history-transport/10.png';
-import course_history_chkt1 from '../images/screenshots/course_history-chkt/1.png';
-import course_history_chkt2 from '../images/screenshots/course_history-chkt/2.png';
-import course_history_chkt3 from '../images/screenshots/course_history-chkt/3.png';
-import course_history_chkt4 from '../images/screenshots/course_history-chkt/4.png';
-import course_history_chkt5 from '../images/screenshots/course_history-chkt/5.png';
-import course_history_chkt6 from '../images/screenshots/course_history-chkt/6.png';
-import course_history_chkt7 from '../images/screenshots/course_history-chkt/7.png';
-import course_history_chkt8 from '../images/screenshots/course_history-chkt/8.png';
-import course_history_chkt9 from '../images/screenshots/course_history-chkt/9.png';
-import course_history_chkt10 from '../images/screenshots/course_history-chkt/10.png';
-import course_history_scb1 from '../images/screenshots/course_history-scb/1.png';
-import course_history_scb2 from '../images/screenshots/course_history-scb/2.png';
-import course_history_scb3 from '../images/screenshots/course_history-scb/3.png';
-import course_history_scb4 from '../images/screenshots/course_history-scb/4.png';
-import course_history_scb5 from '../images/screenshots/course_history-scb/5.png';
-import course_history_scb6 from '../images/screenshots/course_history-scb/6.png';
-import course_history_scb7 from '../images/screenshots/course_history-scb/7.png';
-import course_history_scb8 from '../images/screenshots/course_history-scb/8.png';
-import course_history_scb9 from '../images/screenshots/course_history-scb/9.png';
-import course_history_scb10 from '../images/screenshots/course_history-scb/10.png';
+import course_history_russia_content_1 from '../images/screenshots/course_history-russia/1.png';
+import course_history_russia_content_2 from '../images/screenshots/course_history-russia/2.png';
+import course_history_russia_content_3 from '../images/screenshots/course_history-russia/3.png';
+import course_history_russia_content_4 from '../images/screenshots/course_history-russia/4.png';
+import course_history_russia_content_5 from '../images/screenshots/course_history-russia/5.png';
+import course_history_russia_content_6 from '../images/screenshots/course_history-russia/6.png';
+import course_history_russia_content_7 from '../images/screenshots/course_history-russia/7.png';
+import course_history_russia_content_8 from '../images/screenshots/course_history-russia/8.png';
+import course_history_russia_content_9 from '../images/screenshots/course_history-russia/9.png';
+import course_history_russia_content_10 from '../images/screenshots/course_history-russia/10.png';
+import course_history_russia_video_1 from '../images/screenshots/course_history-russia/11.png';
+import course_history_russia_video_2 from '../images/screenshots/course_history-russia/12.png';
+import course_history_russia_video_3 from '../images/screenshots/course_history-russia/13.png';
+import course_history_russia_map_1 from '../images/screenshots/course_history-russia/14.png';
+import course_history_russia_timeline_1 from '../images/screenshots/course_history-russia/15.png';
+import course_history_russia_task_1 from '../images/screenshots/course_history-russia/16.png';
+import course_history_transport_content_1 from '../images/screenshots/course_history-transport/1.png';
+import course_history_transport_content_2 from '../images/screenshots/course_history-transport/2.png';
+import course_history_transport_content_3 from '../images/screenshots/course_history-transport/3.png';
+import course_history_transport_content_4 from '../images/screenshots/course_history-transport/4.png';
+import course_history_transport_content_5 from '../images/screenshots/course_history-transport/5.png';
+import course_history_transport_content_6 from '../images/screenshots/course_history-transport/6.png';
+import course_history_transport_content_7 from '../images/screenshots/course_history-transport/7.png';
+import course_history_transport_content_8 from '../images/screenshots/course_history-transport/8.png';
+import course_history_transport_content_9 from '../images/screenshots/course_history-transport/9.png';
+import course_history_transport_content_10 from '../images/screenshots/course_history-transport/10.png';
+import course_history_transport_video_1 from '../images/screenshots/course_history-transport/11.png';
+import course_history_transport_video_2 from '../images/screenshots/course_history-transport/12.png';
+import course_history_transport_video_3 from '../images/screenshots/course_history-transport/13.png';
+import course_history_transport_timeline_1 from '../images/screenshots/course_history-transport/14.png';
+import course_history_transport_task_1 from '../images/screenshots/course_history-transport/15.png';
+import course_history_transport_map_1 from '../images/screenshots/course_history-transport/16.png';
+import course_history_transport_panorama_1 from '../images/screenshots/course_history-transport/17.png';
+import course_scb_content_1 from '../images/screenshots/course_history-scb/1.png';
+import course_scb_content_2 from '../images/screenshots/course_history-scb/2.png';
+import course_scb_content_3 from '../images/screenshots/course_history-scb/3.png';
+import course_scb_content_4 from '../images/screenshots/course_history-scb/4.png';
+import course_scb_content_5 from '../images/screenshots/course_history-scb/5.png';
+import course_scb_content_6 from '../images/screenshots/course_history-scb/6.png';
+import course_scb_content_7 from '../images/screenshots/course_history-scb/7.png';
+import course_scb_content_8 from '../images/screenshots/course_history-scb/8.png';
+import course_scb_content_9 from '../images/screenshots/course_history-scb/9.png';
+import course_scb_content_10 from '../images/screenshots/course_history-scb/10.png';
+import course_scb_video_1 from '../images/screenshots/course_history-scb/11.png';
+import course_scb_video_2 from '../images/screenshots/course_history-scb/12.png';
+import course_scb_video_3 from '../images/screenshots/course_history-scb/13.png';
+import course_scb_task_1 from '../images/screenshots/course_history-scb/14.png';
+import course_scb_task_2 from '../images/screenshots/course_history-scb/15.png';
+import course_scb_panorama_1 from '../images/screenshots/course_history-scb/16.png';
+import course_chkt_content_1 from '../images/screenshots/course_history-chkt/1.png';
+import course_chkt_content_2 from '../images/screenshots/course_history-chkt/2.png';
+import course_chkt_content_3 from '../images/screenshots/course_history-chkt/3.png';
+import course_chkt_content_4 from '../images/screenshots/course_history-chkt/4.png';
+import course_chkt_content_5 from '../images/screenshots/course_history-chkt/5.png';
+import course_chkt_content_6 from '../images/screenshots/course_history-chkt/6.png';
+import course_chkt_content_7 from '../images/screenshots/course_history-chkt/7.png';
+import course_chkt_content_8 from '../images/screenshots/course_history-chkt/8.png';
+import course_chkt_content_9 from '../images/screenshots/course_history-chkt/9.png';
+import course_chkt_content_10 from '../images/screenshots/course_history-chkt/10.png';
+import course_chkt_video_1 from '../images/screenshots/course_history-chkt/11.png';
+import course_chkt_video_2 from '../images/screenshots/course_history-chkt/12.png';
+import course_chkt_video_3 from '../images/screenshots/course_history-chkt/13.png';
+import course_chkt_video_4 from '../images/screenshots/course_history-chkt/14.png';
+import course_chkt_task_1 from '../images/screenshots/course_history-chkt/15.png';
+import course_chkt_panorama_1 from '../images/screenshots/course_history-chkt/16.png';
 
 export const courses = [
   { 
@@ -65,7 +90,24 @@ export const courses = [
         img: shumeiko,
       },
     ],
-    screens: [course_history_russia1, course_history_russia2, course_history_russia3, course_history_russia4, course_history_russia5, course_history_russia6, course_history_russia7, course_history_russia8, course_history_russia9, course_history_russia10,],
+    screens: [
+      { img: course_history_russia_content_2, type: 'content', link: '', }, 
+      { img: course_history_russia_video_1, type: 'video', link: 'JTTw88CDxb8', }, 
+      { img: course_history_russia_timeline_1, type: 'timeline', link: 'cgWdLrQG7SE', }, 
+      { img: course_history_russia_content_1, type: 'content', link: '', }, 
+      { img: course_history_russia_task_1, type: 'task', link: 'wn4YLFGRUmE', }, 
+      { img: course_history_russia_content_3, type: 'content', link: '', }, 
+      { img: course_history_russia_video_3, type: 'video', link: '2gDchYUw7kU', }, 
+      { img: course_history_russia_content_4, type: 'content', link: '', }, 
+      { img: course_history_russia_content_5, type: 'content', link: '', }, 
+      { img: course_history_russia_map_1, type: 'task', link: 'PYhqgdBh5q4', }, 
+      { img: course_history_russia_content_6, type: 'content', link: '', }, 
+      { img: course_history_russia_content_7, type: 'content', link: '', }, 
+      { img: course_history_russia_video_2, type: 'video', link: 'F0V7a9eI9Uk', },  
+      { img: course_history_russia_content_8, type: 'content', link: '', }, 
+      { img: course_history_russia_content_9, type: 'content', link: '', }, 
+      { img: course_history_russia_content_10, type: 'content', link: '', }, 
+    ],
     tags: ['history'],
     hours: 108,
     date: '01.01.2023 — 31.12.2023',
@@ -100,7 +142,25 @@ export const courses = [
         img: cherepanov,
       },
     ],
-    screens: [course_history_transport1, course_history_transport2, course_history_transport3, course_history_transport4, course_history_transport5, course_history_transport6, course_history_transport7, course_history_transport8, course_history_transport9, course_history_transport10,],
+    screens: [
+      { img: course_history_transport_content_1, type: 'content', link: '', }, 
+      { img: course_history_transport_video_1, type: 'video', link: 'wdKE8nPcelM', }, 
+      { img: course_history_transport_task_1, type: 'task', link: 'jh9Zq2vPfLg', },
+      { img: course_history_transport_content_2, type: 'content', link: '', }, 
+      { img: course_history_transport_timeline_1, type: 'timeline', link: 'HJDG5_se7ec', }, 
+      { img: course_history_transport_content_3, type: 'content', link: '', }, 
+      { img: course_history_transport_content_4, type: 'content', link: '', }, 
+      { img: course_history_transport_map_1, type: 'map', link: 'tYy9r_mggRk', }, 
+      { img: course_history_transport_content_5, type: 'content', link: '', }, 
+      { img: course_history_transport_content_6, type: 'content', link: '', }, 
+      { img: course_history_transport_panorama_1, type: 'panorama', link: 'nQLCqo9NY5k', }, 
+      { img: course_history_transport_content_7, type: 'content', link: '', }, 
+      { img: course_history_transport_video_2, type: 'video', link: 'qjlKgAj8ud4', }, 
+      { img: course_history_transport_content_8, type: 'content', link: '', }, 
+      { img: course_history_transport_content_9, type: 'content', link: '', }, 
+      { img: course_history_transport_video_3, type: 'video', link: '0OuLpb9zSc8', }, 
+      { img: course_history_transport_content_10, type: 'content', link: '', },
+    ],
     tags: ['transport', 'history'],
     hours: 72,
     date: '01.01.2023 — 31.12.2023',
@@ -125,7 +185,24 @@ export const courses = [
         img: rut,
       },
     ],
-    screens: [course_history_chkt1, course_history_chkt2, course_history_chkt3, course_history_chkt4, course_history_chkt5, course_history_chkt6, course_history_chkt7, course_history_chkt8, course_history_chkt9, course_history_chkt10,],
+    screens: [
+      { img: course_chkt_content_1, type: 'content', link: '', }, 
+      { img: course_chkt_video_1, type: 'video', link: 'G6ZFb7bAh8I', }, 
+      { img: course_chkt_content_2, type: 'content', link: '', }, 
+      { img: course_chkt_content_3, type: 'content', link: '', }, 
+      { img: course_chkt_panorama_1, type: 'panorama', link: 'tbIQ29HVQBw', }, 
+      { img: course_chkt_content_4, type: 'content', link: '', }, 
+      { img: course_chkt_task_1, type: 'task', link: 'ebWCoYCjuaY', }, 
+      { img: course_chkt_content_5, type: 'content', link: '', }, 
+      { img: course_chkt_video_2, type: 'video', link: 'gg6QVHwP_lQ', }, 
+      { img: course_chkt_content_6, type: 'content', link: '', }, 
+      { img: course_chkt_content_7, type: 'content', link: '', }, 
+      { img: course_chkt_video_3, type: 'video', link: '8F2vnJm3gOg', }, 
+      { img: course_chkt_content_8, type: 'content', link: '', }, 
+      { img: course_chkt_content_9, type: 'content', link: '', }, 
+      { img: course_chkt_video_4, type: 'video', link: 'X3ajRUpMwO4', },  
+      { img: course_chkt_content_10, type: 'content', link: '', }, 
+    ],
     tags: ['management', 'economy'],
     hours: 72,
     date: '01.01.2023 — 31.12.2023',
@@ -155,7 +232,24 @@ export const courses = [
         img: novikov,
       },
     ],
-    screens: [course_history_scb1, course_history_scb2, course_history_scb3, course_history_scb4, course_history_scb5, course_history_scb6, course_history_scb7, course_history_scb8, course_history_scb9, course_history_scb10,],
+    screens: [
+      { img: course_scb_content_1, type: 'content', link: '', }, 
+      { img: course_scb_video_1, type: 'video', link: 'z5MgEvgnW28', }, 
+      { img: course_scb_task_1, type: 'task', link: '6fx3yeuXdiM', }, 
+      { img: course_scb_content_2, type: 'content', link: '', }, 
+      { img: course_scb_task_2, type: 'task', link: 'dzBOlIEY5vg', }, 
+      { img: course_scb_content_3, type: 'content', link: '', }, 
+      { img: course_scb_video_2, type: 'video', link: 'D6sPbv4kcT8', }, 
+      { img: course_scb_content_4, type: 'content', link: '', }, 
+      { img: course_scb_content_5, type: 'content', link: '', }, 
+      { img: course_scb_panorama_1, type: 'panorama', link: 'bUmFn_tUTno', }, 
+      { img: course_scb_content_6, type: 'content', link: '', }, 
+      { img: course_scb_content_7, type: 'content', link: '', }, 
+      { img: course_scb_video_3, type: 'video', link: 'IKMC9R5JLfc', },  
+      { img: course_scb_content_8, type: 'content', link: '', }, 
+      { img: course_scb_content_9, type: 'content', link: '', }, 
+      { img: course_scb_content_10, type: 'content', link: '', }, 
+    ],
     tags: ['technology', 'transport'],
     hours: 108,
     date: '01.01.2023 — 31.12.2023',

@@ -6,6 +6,7 @@ import CourseHeader from '../CourseHeader/CourseHeader.js';
 import Footer from '../../Footer/Footer.js';
 import Tag from '../../Tag/Tag.js';
 import PhotoCarousel from '../../PhotoCarousel/PhotoCarousel.js';
+import VideoPopup from '../../Popup/VideoPopup/VideoPopup.js';
 
 
 function CourseItem({ windowWidth }) {
@@ -13,7 +14,21 @@ function CourseItem({ windowWidth }) {
   const [currentCourse, setCurrentCourse] = React.useState({});
   const [isLoadingPage, setIsLoadingPage] = React.useState(true);
 
+  const [isShowVideoPopup, setIsShowVideoPopup] = React.useState(false);
+  const [currentVideo, setCurrentVideo] = React.useState('');
+
   const { courseId } = useParams();
+
+  function openVideoPopup(link) {
+    setCurrentVideo(link);
+    setIsShowVideoPopup(true);
+  }
+
+  function closeVideoPopup() {
+    setIsShowVideoPopup(false);
+  }
+
+  console.log(isShowVideoPopup);
 
   React.useEffect(() => {
     setCurrentCourse(courses.find((elem) => elem.id === courseId));
@@ -80,14 +95,19 @@ function CourseItem({ windowWidth }) {
           <div className='course-item__row'>
             <section className='course-item__section course-item__section_type_screens'>
               <h4 className='course-item__section-title'>Материалы</h4>
-              <PhotoCarousel items={currentCourse.screens} windowWidth={windowWidth} />
+              <PhotoCarousel items={currentCourse.screens} windowWidth={windowWidth} onOpenVideo={openVideoPopup} />
             </section>
-
           </div>
 
         </div>
 
         <Footer windowWidth={windowWidth} isShowNavigation={false} />
+
+        {
+          isShowVideoPopup &&
+          <VideoPopup link={currentVideo} isOpen={isShowVideoPopup} onClose={closeVideoPopup} windowWidth={windowWidth} />
+        }
+
         </>
       }
 

@@ -20,7 +20,7 @@
 }
 .footer__column {
   margin: 0px 40px 0px 0px;
-  min-width: 180px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
 }

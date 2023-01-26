@@ -3,17 +3,109 @@
   max-width: 100%;
 }
 .photo-carousel__item {
+  position: relative;
   margin: 0px 20px 0px 0px;
   width: 100%;
   outline: none;
 }
 .photo-carousel__img {
   width: 100%;
+  height: 100%;
   border-radius: 8px;
   object-fit: contain;
   object-position: center;
   user-select: none;
   pointer-events: none;
+}
+.photo-carousel__tag {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  padding: 8px 16px;
+  background: #696969;
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--white-color);
+  user-select: none;
+  pointer-events: none;
+}
+.photo-carousel__overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  transition: all .3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photo-carousel__button {
+  opacity: 0;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  background: none;
+  width: 60px;
+  height: 60px;
+  background-image: url('../../images/video-play.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all .3s ease-in-out;
+}
+.photo-carousel__item:hover .photo-carousel__overlay  {
+  background-color: rgba(0, 0, 0, .7);
+}
+.photo-carousel__item:hover .photo-carousel__button {
+  opacity: 1;
+}
+.photo-carousel__button:hover {
+  cursor: pointer;
+}
+.photo-carousel__tag_type_content {
+  background: #228B22;
+}
+.photo-carousel__tag_type_video {
+  background: var(--main-color);
+}
+.photo-carousel__tag_type_task {
+  background: #8B0000;
+}
+.photo-carousel__tag_type_timeline {
+  background: #4B0082;
+}
+.photo-carousel__tag_type_panorama { 
+  background: #008B8B;
+}
+.photo-carousel__tag_type_map { 
+  background: #191970;
+}
+.photo-carousel__btn {
+  position: absolute;
+  border: none;
+  outline: none;
+  bottom: 12px;
+  right: 8px;
+  padding: 8px 16px;
+  background: #696969;
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--white-color);
+}
+.photo-carousel__btn:hover {
+  cursor: pointer;
 }
 .rec.rec-carousel-wrapper {
   position: relative;
@@ -79,5 +171,15 @@
   }
   .rec.rec-arrow {
     display: none;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .photo-carousel__tag {
+    top: 8px;
+    right: 4px;
+    padding: 6px 10px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
