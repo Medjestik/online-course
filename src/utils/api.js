@@ -6,14 +6,14 @@ function handleResponse (res) {
     }
 }
 
-export const login = ({ action, data }) => {
-  return fetch(`https://dpo.emiit.ru/_wt/auth/login`, {
+export const registration = (user) => {
+  return fetch(`https://online-api.emiit.ru/_wt/auth/action/register`, {
     method: 'POST', 
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ action, data })
+    body: JSON.stringify({ lastname: user.lastname, firstname: user.firstname, middlename: user.middlename, email: user.mail, password: user.password })
   })
   .then(res => handleResponse(res));
 };

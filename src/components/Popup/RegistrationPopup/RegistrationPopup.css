@@ -1,0 +1,111 @@
+.registration__form {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 572px;
+}
+.registration__title {
+  margin: 20px 0px 12px 0px;
+  width: 100%;
+  text-align: left;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--main-black-color);
+}
+.registration__field {
+  margin: 8px 0px 0px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.registration__input-caption {
+  margin: 0px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--main-black-color);
+}
+.registration__input-field {
+  margin: 4px 0px 0px 0px;
+  width: 100%;
+  padding: 11px 16px 11px 16px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background: #ffffff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.registration__input {
+  margin: 0px;
+  width: 100%;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  background: #ffffff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.2px;
+  color: var(--title-color);
+}
+.registration__input::placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--border-card-color);
+}
+.registration__input-error {
+  margin: 4px 0px 0px 0px;
+  min-height: 12px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--error-color);
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+.registration__input-error_status_show {
+  opacity: 1;
+}
+.registration__btn-save {
+  margin: 20px 0px 0px 0px;
+  width: 100%;
+  padding: 11px;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 16px;
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  transition: all .3s ease-in-out;
+}
+.registration__btn-save:hover  {
+  cursor: pointer;
+  opacity: .8;
+}
+.registration__btn-save_type_block {
+  background: var(--border-card-color);
+  cursor: default;
+  user-select: none;
+  pointer-events: none;
+}
+
+@media all and (max-width: 1023px) {
+  .registration__form {
+    width: 100%;
+  }
+}
+
+

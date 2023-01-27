@@ -28,8 +28,6 @@ function CourseItem({ windowWidth }) {
     setIsShowVideoPopup(false);
   }
 
-  console.log(isShowVideoPopup);
-
   React.useEffect(() => {
     setCurrentCourse(courses.find((elem) => elem.id === courseId));
     setIsLoadingPage(false);
@@ -94,7 +92,7 @@ function CourseItem({ windowWidth }) {
 
           <div className='course-item__row'>
             <section className='course-item__section course-item__section_type_screens'>
-              <h4 className='course-item__section-title'>Материалы</h4>
+              <h4 className='course-item__section-title'>Примеры учебных материалов</h4>
               <PhotoCarousel items={currentCourse.screens} windowWidth={windowWidth} onOpenVideo={openVideoPopup} />
             </section>
           </div>
