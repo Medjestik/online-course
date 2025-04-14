@@ -53,6 +53,11 @@ function CourseItem({ windowWidth }) {
               <div className='course-item__info'>
                 <span className='course-item__title'>Online-курс</span>
                 <h2 className='course-item__name'>«{currentCourse.name}»</h2>
+                {
+                  currentCourse.id === 'course_1' &&
+                  <a className='course-item__link' target='_blank' rel='noreferrer' href='https://www.youtube.com/watch?v=nqbZSRh3PNU'>В.В. Путин об изучении истории на встрече с историками 4 ноября 2022 года</a>
+                }
+                
                 <div className='course-item__tags'>
                   <span className='course-item__hours'>{currentCourse.hours} ч.</span>
                   <Tag tags={currentCourse.tags} />

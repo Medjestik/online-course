@@ -199,6 +199,16 @@
 .course-item__author-degree_width_large {
   max-width: 100%;
 }
+.course-item__link {
+  margin: 0px;
+  color: var(--main-color);
+  font-size: 16px;
+  line-height: 1.15;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: underline;
+}
 
 
 @media all and (max-width: 1279px) {
